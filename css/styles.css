@@ -411,7 +411,6 @@ body {
 	height: 44px;
 	color: #afb1b8;
 	background-color: transparent;
-	/* margin-right: 10px; */
 	border-radius: 50%;
 }
 
@@ -822,7 +821,134 @@ a:link:focus {
 	border-radius: 50%;
 }
 
-.close-wrap:hover {
+.close-wrap:hover,
+.close-wrap:focus {
 	cursor: pointer;
 	box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 20%);
+	background-image: url(../images/close-blue.svg);
+}
+
+/* Modal forms */
+
+/* .modal-general {
+	padding: 40px;
+
+	/* outline: 1px solid tomato; }*/
+
+.modal {
+	padding: 40px;
+	width: 528px;
+}
+
+.modal-header {
+	margin-top: 0;
+	margin-bottom: 12px;
+	letter-spacing: 0.03em;
+	font-size: 20px;
+	line-height: 0.87;
+	text-align: center;
+}
+
+.modal-form {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-form-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	/* outline: 1px solid tomato; */
+}
+
+.modal-form-item:last-child {
+	flex-direction: row;
+}
+
+.modal-form-item input,
+.modal-form-item textarea {
+	padding: 14px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.modal-form-item input {
+	height: 40px;
+}
+
+.modal-form-item.check {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-bottom: 30px;
+}
+
+.modal-form-item:nth-child(5) {
+	margin-bottom: 20px;
+}
+
+.modal-form-item input[type="checkbox"] {
+	width: 16px;
+	height: 15px;
+	background: #212121;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 0;
+	height: 120px;
+}
+
+.modal-form-label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height */
+
+	letter-spacing: 0.01em;
+
+	color: #757575;
+  margin-bottom: 4px;
+}
+
+.modal-form-label-check {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+
+	letter-spacing: 0.03em;
+
+	color: #757575;
+}
+
+.modal-form-label-check a {
+	text-decoration: underline;
+	color: #2196f3;
+}
+
+button[type="submit"] {
+	display: block;
+
+	width: 200px;
+	height: 50px;
+
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+
+	letter-spacing: 0.06em;
+	color: var(--accent-color-two);
+	margin-right: auto;
+	margin-left: auto;
 }
