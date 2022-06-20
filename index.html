@@ -599,6 +599,47 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="close-wrap" data-modal-close></button>
+
+				<!-- Modal forms -->
+
+				<!-- <div class="modal-general"> -->
+
+				<form class="modal-form">
+					<h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
+					<div class="modal-form-item">
+						<label for="name" class="modal-form-label">Имя</label>
+						<input type="name" name="" id="name" class="modal-form-input" />
+					</div>
+					<div class="modal-form-item">
+						<label for="tel" class="modal-form-label">Телефон</label>
+						<input type="tel" name="" id="tel" />
+					</div>
+					<div class="modal-form-item">
+						<label for="email" class="modal-form-label">Почта</label>
+						<input type="email" name="" id="email" />
+					</div>
+
+					<div class="modal-form-item">
+						<label for="comment" class="modal-form-label"> Комментарий </label>
+						<textarea
+							name="comment"
+							id="comment"
+							rows="2"
+							placeholder="Введите текст"
+						></textarea>
+					</div>
+
+					<div class="modal-form-item check">
+						<input type="checkbox" name="" id="check" />
+						<label for="check" class="modal-form-label-check"
+							>Соглашаюсь с рассылкой и принимаю
+							<a href="#">Условия договора</a></label
+						>
+					</div>
+
+					<button type="submit">Отправить</button>
+				</form>
+				<!-- </div> -->
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
