@@ -1064,7 +1064,7 @@ textarea {
 	padding-left: 3px;
 }
 
-.modal-form-label-check a:focus {
+.modal-form-label-check a:hover {
   text-decoration: none;
   /* outline: none;
   border: 1px solid var(--accent-color); */
