@@ -147,6 +147,7 @@ body {
 
 .site-nav .link {
 	position: relative;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .web {
@@ -173,7 +174,6 @@ body {
 .phone:hover,
 .phone:focus {
 	color: var(--accent-color);
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -210,6 +210,7 @@ body {
 
 	align-items: center;
 	display: flex;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer {
@@ -413,13 +414,13 @@ body {
 	color: #afb1b8;
 	background-color: transparent;
 	border-radius: 50%;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover {
 	background-color: var(--accent-color);
 	color: var(--accent-color-two);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-icon {
@@ -454,12 +455,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	color: #afb1b8;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover {
 	color: #2196f3;
 	border: 1px solid #2196f3;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -499,11 +500,11 @@ body {
 .footer-center-info > .icon-list > .icon-general > .social-link {
 	color: var(--accent-color-two);
 	background-color: rgba(255, 255, 255, 0.1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-center-info > .icon-list > .icon-general > .social-link:hover {
 	background-color: #2196f3;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-general {
@@ -579,6 +580,14 @@ body {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: none;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+	color: var(--accent-color-two);
+	background-color: var(--button-background-color-hover);
 }
 
 .button-styles-icon {
@@ -632,7 +641,6 @@ body {
 
 .item-link:hover .item-pic-descr {
 	transform: translateY(-100%);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-pic-descr {
@@ -669,12 +677,12 @@ body {
 	width: 100%;
 	height: 100%;
 	display: block;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-link:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-background {
@@ -691,14 +699,14 @@ body {
 	padding: 10px 32px;
 
 	display: inline-block;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-background:hover,
 .button-background:focus {
 	color: var(--accent-color-two);
 	background-color: var(--button-background-color-hover);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-background-port {
@@ -712,6 +720,10 @@ body {
 
 	border-radius: 4px;
 	border: transparent;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-background-port:hover,
@@ -725,10 +737,6 @@ body {
 
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 		0px 2px 2px rgba(0, 0, 0, 0.12);
-
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button {
@@ -831,11 +839,11 @@ button {
 a:link {
 	text-decoration: none;
 	font-style: var(--font-style);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:link:hover,
 a:link:focus {
 	color: var(--accent-color);
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-data {
 	color: var(--studio-style-color);
@@ -895,6 +903,8 @@ a:link:focus {
 	background-color: var(--accent-color-two);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
+
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-wrap:hover,
@@ -902,7 +912,6 @@ a:link:focus {
 	cursor: pointer;
 	box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 20%);
 	background-image: url(../images/close-blue.svg);
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Modal forms */
@@ -959,12 +968,12 @@ a:link:focus {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	outline: inherit;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus,
 .modal-form-item textarea:focus {
 	border: 1px solid var(--accent-color);
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-item input {
@@ -978,8 +987,9 @@ a:link:focus {
 
 input[type="checkbox"] {
 	position: absolute;
-	visibility: hidden;
-	width: 100%;
+	appearance: none;
+	/* visibility: hidden; */
+	width: 15px;
 	display: flex;
 }
 
@@ -990,15 +1000,19 @@ input[type="checkbox"] {
 	border: 2px solid black;
 	border-radius: 2px;
 	margin-right: 9px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type="checkbox"]:checked + .icon-checkbox {
 	background-image: url(../images/icon-check.svg);
 	background-size: contain;
-	background-color: var(--accent-color);
-	/* background-origin: border-box; */
+	background-color: var(--accent-color); 
 	border: 2px solid var(--accent-color);
 	background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:focus + .icon-checkbox {
+	border: 2px solid var(--accent-color);
 }
 
 textarea {
@@ -1050,6 +1064,12 @@ textarea {
 	padding-left: 3px;
 }
 
+.modal-form-label-check a:focus {
+  text-decoration: none;
+  /* outline: none;
+  border: 1px solid var(--accent-color); */
+}
+
 .modal-form > button[type="submit"] {
 	display: block;
 
@@ -1069,4 +1089,11 @@ textarea {
 	color: var(--accent-color-two);
 	margin-right: auto;
 	margin-left: auto;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form > button[type="submit"]:hover,
+.modal-form > button[type="submit"]:focus {
+	color: var(--accent-color-two);
+	background-color: var(--button-background-color-hover);
 }
